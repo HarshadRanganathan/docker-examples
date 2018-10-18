@@ -1,0 +1,29 @@
+{
+  "name": "redis-express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HarshadRanganathan/docker-examples.git"
+  },
+  "keywords": [
+    "docker",
+    "redis",
+    "express"
+  ],
+  "author": "Harshad Ranganathan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HarshadRanganathan/docker-examples/issues"
+  },
+  "homepage": "https://github.com/HarshadRanganathan/docker-examples#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "redis": "^2.8.0"
+  }
+}
