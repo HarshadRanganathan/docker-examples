@@ -10,7 +10,7 @@ class Fib extends Component {
 
     componentDidMount() {
         this.fetchValues();
-        this.fecthIndexes();
+        this.fetchIndexes();
     }
 
     async fetchValues() {
@@ -18,7 +18,7 @@ class Fib extends Component {
         this.setState({ values: values.data });
     }
 
-    async fecthIndexes() {
+    async fetchIndexes() {
         const seenIndexes = await axios.get('/api/values/all');
         this.setState({ seenIndexes: seenIndexes.data });
     }
@@ -29,6 +29,8 @@ class Fib extends Component {
            index: this.state.index
         });
         this.setState({ index: '' });
+        this.fetchIndexes();
+        this.fetchValues();
     }
 
     renderSeenIndexes() {
@@ -40,7 +42,7 @@ class Fib extends Component {
         for(let key in this.state.values) {
             entries.push(
                 <div key={key}>
-                    For index {key} I Calculated {this.state.values[{key}]}
+                    For index {key} I Calculated {this.state.values[key]}
                 </div>
             );
         }
