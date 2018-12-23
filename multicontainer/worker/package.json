@@ -10,7 +10,7 @@
   "author": "Harshad Ranganathan",
   "license": "ISC",
   "dependencies": {
-    "nodemon": "^1.18.5",
+    "nodemon": "^1.18.9",
     "redis": "^2.8.0"
   }
 }
